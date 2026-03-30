@@ -1,0 +1,142 @@
+.landingPageContainer{
+  width:100vw;
+  height: 100vh;
+  background: url("/background.png"); 
+  background-repeat: no-repeat;
+  background-size:cover;
+}  
+.landingPageContainer nav{ 
+   padding-inline:1.2rem;
+   padding-block:1.6rem;
+   display:flex; 
+   justify-content: space-between;
+   align-items: center;
+}   
+.navlist{
+  display: flex;
+  gap:1.4rem;
+  font-size:1.4rem; 
+  font-weight:400; 
+  cursor: pointer;
+}  
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem; 
+  height:80vh;
+  align-items: center;
+
+}
+.landingMainContainer > div:nth-child(1){
+  font-size: 1.3rem;
+}
+.landingMainContainer > div:nth-child(1) div[role='button']{
+     width: fit-content;
+     padding: 0.5rem;
+     background-color: orange;
+     border-radius: 2rem;
+     margin-top: 1rem;
+}
+.landingMainContainer> div:nth-child(1) div[role='button'] a{
+  color:white;
+  font-size:1.6rem;
+  font-weight:500;
+}
+.landingMainContainer > div:nth-child(2) img{
+  height: 70vh;
+  width:auto;
+}
+.getForm{
+     height: 100vh;
+     width: 100vw;
+    background: url("/background.png"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.getForm form{
+    height:max-content;
+    width:40vw; 
+    position:absolute;
+    left:25%;
+    top:30%; 
+    border: 2px solid silver;
+    border-radius: 20px;
+}  
+.getForm form div{
+  margin:1.2rem;
+}
+.getForm form input{
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border-color:silver;  
+}
+.getForm form div{
+   display: flex; 
+   justify-content:space-around;
+}
+.navBar{
+  width: 100%;
+}
+.navBar-direction{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar-left{
+  padding-inline: 0.5rem;
+  font-size: 1.2rem;
+  font-style: oblique;
+  color: rgb(253, 142, 142);
+}
+.navBar-right{
+  display: flex;
+  align-items: center;
+  width: 35vw;
+  justify-content:space-around;
+}
+.leftPanel > div{
+  width:100%;
+  align-self: center;
+   justify-self: center;
+}
+.rightPanel > img{
+    width: 80%;
+}
+@media (min-width:875px){
+  .navBar-right{
+    width: 20vw;
+  }
+  .rightPanel >img{
+    width: 70%;
+  }
+}
+@media (max-width:875px){
+    .landingMainContainer{
+      flex-direction: column;
+      height: auto;
+      padding:1rem;
+      text-align: center; 
+    }
+    .landingMainContainer > div:nth-child(2){
+      order:-1;
+    }
+    .landingMainContainer > div:nth-child(2) img{
+      width:100%;
+      height: auto;
+      max-height: 50vh; 
+    }
+    .landingMainContainer > div:nth-child(1){
+      width: 100%;
+    }
+    .landingMainContainer > div:nth-child(1) div[role='button']{
+      margin:1rem auto;
+    }
+    .landingPageContainer{
+      width:100%;
+      overflow-x: hidden;
+    }
+    body{
+      overflow-x: hidden; 
+    }
+}

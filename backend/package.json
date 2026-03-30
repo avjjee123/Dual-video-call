@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aviral_jain",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "crypto": "^1.0.1",
+    "express": "^5.2.1",
+    "http-status": "^2.1.0",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.2",
+    "nodemon": "^3.1.14",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  }
+}

@@ -1,0 +1,17 @@
+.bodyTag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+ width: 33.33%;
+ height: auto;
+ border: solid black 2px;
+ border-radius: 10px;
+ margin:5px;
+}
+.cardCode, .cardTime{
+    width:fit-content;
+     margin-left: 10%;
+}
